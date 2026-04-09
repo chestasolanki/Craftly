@@ -1,0 +1,19 @@
+{
+  "name": "groq-website-builder-agent",
+  "version": "1.0.0",
+  "description": "A Groq-powered AI agent that builds websites via terminal commands",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.1",
+    "express": "^4.18.2",
+    "groq-sdk": "^0.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
