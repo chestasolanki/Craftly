@@ -1421,8 +1421,9 @@ app.get("/", (_req, res) => {
 `);
 });
 
+
 // ─── Start ────────────────────────────────────────────────────────────────────
-const PORT = process.env.PORT || 3000;
-httpServer.listen(PORT, () => {
-  console.log(`\n🚀 Groq Website Builder at: http://localhost:${PORT}`);
+const PORT = process.env.PORT || 8080;
+httpServer.listen(PORT, "0.0.0.0",() => {
+  console.log(`\n🚀 Groq Website Builder at: http://0.0.0.0:${PORT}`);
 });
